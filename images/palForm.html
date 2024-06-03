@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        outline: none;
+      }
+      body {
+        background-image: url(./download.jpg);
+        background-repeat: no-repeat;
+      }
+      .card1 {
+        background-color: rgb(59, 78, 78);
+        height: 100vh;
+        width: 65%;
+
+        position: absolute;
+        left: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+      }
+      .h1 {
+        font-size: 50px;
+        margin-left: 100px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+      .p {
+        margin-left: 100px;
+        font-size: 20px;
+        margin-top: 2px;
+      }
+      .con {
+        background-color: azure;
+        height: 700px;
+        width: 80%;
+      }
+      .input {
+        margin-left: 100px;
+        background-color: rgb(241, 233, 233);
+        border: 0px;
+        width: 37%;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        padding: 20px;
+      }
+      .Email {
+        margin-left: 30px;
+        background-color: rgb(241, 233, 233);
+        border: 0px;
+        width: 37%;
+
+        padding: 20px;
+      }
+      .donAcount {
+        margin-left: 100px;
+        font-size: 20px;
+        display: block;
+        margin-top: 20px;
+      }
+      .radio {
+        display: inline-flex;
+
+        margin-left: 70px;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      input {
+        margin-left: 34px;
+      }
+      .Amount {
+        width: 20%;
+        padding: 20px;
+        border: none;
+        background-color: rgb(241, 233, 233);
+      }
+      .LastInput {
+        width: 70%;
+        padding: 20px;
+        background-color: rgb(241, 233, 233);
+        border: none;
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-bottom: 40px;
+      }
+      .update {
+        display: inline;
+        margin-left: 64px;
+        margin-top: 100px;
+      }
+      button {
+        width: 90%;
+        padding: 20px;
+        border: none;
+        background-color: green;
+        color: white;
+        font-size: 20px;
+        margin-left: 55px;
+        margin-top: 40px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      .para {
+        margin-left: 40px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      @media only screen and (max-width: 600px) {
+        body {
+          background-image: url(./download.jpg);
+        }
+        .card1 {
+          background-color: rgba(255, 255, 255, 0.3);
+          /* 
+          border: 2px solid rgba(255, 255, 255, 0.4); */
+          width: 90%;
+          height: 183vh;
+          position: absolute;
+          left: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: normal;
+          padding: 1px;
+        }
+
+        .con {
+          background-color: transparent;
+          border: none;
+          height: 170vh;
+          text-align: left;
+          margin-top: 0px;
+        }
+        .h1 {
+          font-size: 50px;
+          margin-left: 10px;
+          margin-top: 20px;
+          margin-bottom: 0px;
+        }
+        .p {
+          margin-left: 10px;
+          font-size: 20px;
+          margin-top: 2px;
+        }
+        .input {
+          background-color: transparent;
+          border: 0px;
+          border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+          width: 80%;
+          margin-left: 10px;
+          margin-bottom: 20px;
+          margin-top: 40px;
+          padding: 20px;
+        }
+        .Email {
+          margin-left: 10px;
+          background-color: transparent;
+          border: 0px;
+          border-bottom: 2px solid black;
+
+          width: 80%;
+
+          padding: 20px;
+        }
+        .donAcount {
+          margin-left: 10px;
+          font-size: 25px;
+          display: block;
+          margin-top: 20px;
+          margin-bottom: 5px;
+        }
+        .radio {
+          display: grid;
+          grid-template-columns: 100px 100px 100px;
+          grid-template-rows: 20px 20px;
+          row-gap: 10px;
+          column-gap: 10px;
+          margin-left: 3px;
+          margin-bottom: 13px;
+          font-size: 20px;
+        }
+        input {
+          margin-left: 4px;
+        }
+        .Amount {
+          width: 75%;
+          padding: 20px;
+
+          background-color: transparent;
+          border: 0px;
+          border-bottom: 2px solid black;
+        }
+        .LastInput {
+          width: 75%;
+          padding: 20px;
+          background-color: transparent;
+          border: 0px;
+          border-bottom: 2px solid black;
+          margin-top: 20px;
+          margin-left: 4px;
+          margin-bottom: 20px;
+        }
+        .update {
+          display: inline;
+          margin-left: 4px;
+          margin-top: 20px;
+          font-size: 15px;
+        }
+        button {
+          width: 90%;
+          padding: 20px;
+          border: none;
+          background-color: green;
+          color: white;
+          font-size: 20px;
+          margin-left: 15px;
+          margin-top: 20px;
+          border-radius: 10px;
+          margin-bottom: 10px;
+        }
+        .para {
+          margin-left: 10px;
+        }
+        ::placeholder {
+          color: black;
+          font-weight: bold;
+          opacity: 0.6;
+          font-size: 15px;
+        }
+
+        .input,
+        .Email,
+        .LastInput,
+        .Amount {
+          border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card1">
+      <div class="con">
+        <h1 class="h1">Make a Donation</h1>
+        <p class="p">
+          Every donation no matter how big or small a significent deffrence
+          <br />
+          to out cause. Thank you for doing your part to help
+        </p>
+        <form action="">
+          <input type="text" placeholder="Your Name" class="input" />
+          <input type="text" placeholder="Your Email" class="Email" />
+          <span class="donAcount">Donation account</span>
+          <div class="radio">
+            <div>
+              <input type="radio" name="radio" />
+              <label for="firstname">$20</label>
+            </div>
+            <div>
+              <input type="radio" name="radio" />
+              <label for="firstname">$20</label>
+            </div>
+            <div>
+              <input type="radio" name="radio" />
+              <label for="firstname">$20</label>
+            </div>
+            <div>
+              <input type="radio" name="radio" />
+              <label for="firstname">$20</label>
+            </div>
+            <div>
+              <input type="radio" name="radio" />
+              <label for="firstname">$20</label>
+            </div>
+            <div>
+              <input type="radio" name="radio" />
+              <label for="firstname">$20</label>
+            </div>
+          </div>
+
+          <input type="text" placeholder="Amount" class="Amount" />
+          <input
+            type="text"
+            placeholder="Company name (if applicable) "
+            class="LastInput"
+          />
+          <br />
+          <div class="update">
+            <input type="radio" name="radio" />
+            <label for="firstname"
+              >i would like to update about occasions via E-mail</label
+            >
+          </div>
+        </form>
+        <button><a href="./test.html">Submit</a></button>
+        <div class="para">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam
+            non vel officiis animi reprehenderit odit, vero nisi ipsa tenetur
+            possimus facere eius modi neque, in labore quidem fugiat
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
